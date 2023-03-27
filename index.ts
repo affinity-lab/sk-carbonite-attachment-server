@@ -1,2 +1,2 @@
 export {default as FileServer} from "./src/file-server";
-export {default as FileUrlProvider} from "./src/file-url-provider";
+export {default as FileProvider} from "./src/file-provider";

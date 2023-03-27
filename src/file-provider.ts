@@ -6,7 +6,7 @@ type File = {
 		ver: string,
 }
 
-export default class FileUrlProvider {
+export default class FileProvider {
 	constructor(private fsUrlPrefix: string, private imgUrlPrefix: string) {}
 	img(file: File, width: number, height: number): Img {return new Img(file, width, height, this.imgUrlPrefix);}
 	file(file: File): string {return `${this.fsUrlPrefix}/${idToB36(file.id)}/${file.name}`;}
